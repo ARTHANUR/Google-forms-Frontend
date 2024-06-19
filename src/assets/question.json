@@ -1,0 +1,665 @@
+[
+    {
+        "page": 1,
+        "questions": [
+            {
+                "type": "text",
+                "label": "First Name",
+                "required": true,
+                "description": "Enter your first name.",
+                "defaultValue": "Shashank",
+                "accessor_key": "first_name"
+            },
+            {
+                "type": "text",
+                "label": "Middle Name",
+                "required": false,
+                "description": "Enter your Middle name.",
+                "accessor_key": "middle_name"
+            },
+            {
+                "type": "text",
+                "label": "Last Name",
+                "required": true,
+                "description": "Enter your last name.",
+                "defaultValue": "A K",
+                "accessor_key": "last_name"
+            },
+            {
+                "type": "tel",
+                "label": "Contact Number",
+                "required": true,
+                "description": "Enter your primary contact number. Format: +(Country Code) [Number]",
+                "defaultValue": "+916363117574",
+                "accessor_key": "contact_number"
+            },
+            {
+                "type": "tel",
+                "label": "Alternate Contact Number",
+                "required": true,
+                "description": "Enter an alternate contact number. Format: +(Country Code) [Number]",
+                "defaultValue": "+917019429142",
+                "accessor_key": "alternate_contact_number"
+            },
+            {
+                "type": "email",
+                "label": "Email ID",
+                "required": true,
+                "description": "Enter your email address. Format: example@example.com.",
+                "defaultValue": "sarthanur@gmail.com",
+                "accessor_key": "email_id"
+            },
+            {
+                "type": "date",
+                "label": "Date of Birth",
+                "required": true,
+                "description": "Select your date of birth from the calendar.",
+                "accessor_key": "date_of_birth"
+            },
+            {
+                "type": "number",
+                "label": "Age",
+                "required": true,
+                "description": "Enter your age. Format: 25",
+                "defaultValue": 21,
+                "accessor_key": "age"
+            },
+            {
+                "type": "radio",
+                "label": "Gender",
+                "required": true,
+                "options": ["Male", "Female", "Prefer not to say"],
+                "accessor_key": "gender"
+            },
+            {
+                "type": "radio",
+                "label": "Marital Status",
+                "required": true,
+                "description": "Enter your marital status.",
+                "options": ["Married", "Unmarried", "Prefer not to say"],
+                "accessor_key": "marital_status"
+            },
+            {
+                "type": "text",
+                "label": "Nationality / Citizen",
+                "required": true,
+                "description": "Enter the name of the Country of nationality or citizenship.",
+                "defaultValue": "Indian",
+                "accessor_key": "nationality"
+            },
+            {
+                "type": "text",
+                "label": "Blood Group",
+                "required": true,
+                "description": "Enter your blood group. Format: O+, A-, etc.",
+                "defaultValue": "Option 1",
+                "accessor_key": "blood_group"
+            }
+        ]
+    },
+    {
+        "page": 2,
+        "questions": [
+            {
+                "type": "textarea",
+                "label": "Current Residential Address",
+                "required": true,
+                "description": "Enter your current residential address in Full along with City, State, Postal Code",
+                "defaultValue": "Gopala, Shivamogga, Karnataka",
+                "accessor_key": "current_residential_address"
+            },
+            {
+                "type": "textarea",
+                "label": "Permanent Residential Address",
+                "required": true,
+                "description": "Enter your Permanent Residential Address in Full along with City, State, Postal Code",
+                "defaultValue": "Gopala, Shivamogga, Karnataka",
+                "accessor_key": "permanent_residential_address"
+            },
+            {
+                "type": "text",
+                "label": "Current Location",
+                "required": true,
+                "description": "Enter your current city of residence.",
+                "defaultValue": "Bengaluru",
+                "accessor_key": "current_location"
+            },
+            {
+                "type": "text",
+                "label": "Preferred Location",
+                "required": true,
+                "description": "Enter your preferred city of residence.",
+                "defaultValue": "Bengaluru",
+                "accessor_key": "preferred_location"
+            }
+        ]
+    },
+    {
+        "page": 3,
+        "questions": [
+            {
+                "type": "radio",
+                "label": "Do you have a passport?",
+                "required": true,
+                "description": "Select 'Yes' if you have a passport, otherwise select 'No'.",
+                "options": ["YES", "NO"],
+                "accessor_key": "has_passport"
+            },
+            {
+                "type": "text",
+                "label": "Passport Number",
+                "required": false,
+                "description": "If you selected 'Yes' above, enter your passport number.",
+                "accessor_key": "passport_number"
+            },
+            {
+                "type": "file",
+                "label": "Upload your Passport Copy",
+                "required": false,
+                "description": "If you selected 'Yes' above, Upload a copy of your passport.",
+                "accessor_key": "passport_copy"
+            },
+            {
+                "type": "text",
+                "label": "Aadhaar Card Number",
+                "required": true,
+                "description": "Enter your Aadhaar card number.",
+                "defaultValue": "345667896543",
+                "accessor_key": "aadhaar_card_number"
+            },
+            {
+                "type": "file",
+                "label": "Upload your Aadhaar Card Copy",
+                "required": false,
+                "description": "Upload a copy of your Aadhaar Card.",
+                "accessor_key": "aadhaar_card_copy"
+            },
+            {
+                "type": "text",
+                "label": "PAN Card Number",
+                "required": true,
+                "description": "Enter your PAN card number.",
+                "defaultValue": "2345678967889",
+                "accessor_key": "pan_card_number"
+            },
+            {
+                "type": "file",
+                "label": "Upload your PAN Card Copy",
+                "required": false,
+                "description": "Upload a copy of your PAN Card.",
+                "accessor_key": "pan_card_copy"
+            },
+            {
+                "type": "text",
+                "label": "Driving License Details (if applicable)",
+                "required": false,
+                "description": "Enter your driving license number if applicable.",
+                "defaultValue": "Option 1",
+                "accessor_key": "driving_license_details"
+            },
+            {
+                "type": "file",
+                "label": "Upload your Driving License Copy",
+                "required": false,
+                "description": "Upload a copy of your Driving License Card.",
+                "accessor_key": "driving_license_copy"
+            },
+            {
+                "type": "text",
+                "label": "Voter ID Card Details (if applicable)",
+                "required": false,
+                "description": "Enter your Voter ID card number if applicable.",
+                "defaultValue": "Option 1",
+                "accessor_key": "voter_id_card_details"
+            },
+            {
+                "type": "file",
+                "label": "Upload your Voter ID Copy",
+                "required": false,
+                "description": "Upload a copy of your Voter ID Card.",
+                "accessor_key": "voter_id_copy"
+            }
+        ]
+    },
+    {
+        "page": 4,
+        "questions": [
+            {
+                "type": "file",
+                "label": "Photograph",
+                "required": true,
+                "description": "Upload a recent passport-sized photograph.",
+                "accessor_key": "photograph"
+            },
+            {
+                "type": "url",
+                "label": "Work Link/Portfolio (LinkedIn)",
+                "required": true,
+                "description": "Provide a link to your LinkedIn profile or online portfolio.",
+                "accessor_key": "work_link"
+            },
+            {
+                "type": "file",
+                "label": "Please attach your updated Resume/CV",
+                "required": true,
+                "description": "Upload your resume and portfolio.",
+                "accessor_key": "resume"
+            },
+            {
+                "type": "textarea",
+                "label": "Please share the links of your Social Media Profiles (LinkedIn, Facebook, Instagram, etc.)",
+                "required": true,
+                "description": "Provide links to your social media profiles.",
+                "accessor_key": "social_media_profiles"
+            },
+            {
+                "type": "url",
+                "label": "Please share the links of your Online Portfolio or Website (if applicable) {If none please mention NA}",
+                "required": true,
+                "description": "Provide the link to your online portfolio or personal website.",
+                "accessor_key": "online_portfolio"
+            },
+            {
+                "type": "textarea",
+                "label": "Skills",
+                "required": true,
+                "description": "List down all the Skills you possess.",
+                "accessor_key": "skills"
+            },
+            {
+                "type": "textarea",
+                "label": "Languages",
+                "required": true,
+                "description": "List the Languages you are Proficient in.",
+                "accessor_key": "languages"
+            }
+        ]
+    },
+    {
+        "page": 5,
+        "questions": [
+            {
+                "type": "text",
+                "label": "Education: Course",
+                "required": true,
+                "description": "Enter the course you have completed.",
+                "accessor_key": "education_course"
+            },
+            {
+                "type": "text",
+                "label": "Education: Specialization",
+                "required": true,
+                "description": "Enter your area of specialization.",
+                "accessor_key": "education_specialization"
+            },
+            {
+                "type": "text",
+                "label": "Education: Institution",
+                "required": true,
+                "description": "Enter the name of the institution where you completed your course.",
+                "accessor_key": "education_institution"
+            },
+            {
+                "type": "date",
+                "label": "Education: Year of Completion",
+                "required": true,
+                "description": "Enter the date you completed your course.",
+                "accessor_key": "education_year_of_completion"
+            },
+            {
+                "type": "text",
+                "label": "Education: Pass Percentage",
+                "required": true,
+                "description": "Enter the percentage you achieved in your course. Format: 85.6%.",
+                "accessor_key": "education_pass_percentage"
+            },
+            {
+                "type": "file",
+                "label": "Upload Proof of Education Completion",
+                "required": true,
+                "description": "Upload the proof of your education completion. Please upload your Consolidated MarkSheet or Semester Marksheet, Provisional Degree Certificate, Degree Completion Certificate.",
+                "accessor_key": "education_proof"
+            },
+            {
+                "type": "radio",
+                "label": "Any Certifications",
+                "required": true,
+                "description": "Select 'Yes' if you have any certifications, otherwise select 'No'.",
+                "options": ["YES", "NO"],
+                "accessor_key": "any_certifications"
+            },
+            {
+                "type": "textarea",
+                "label": "Certifications Obtained",
+                "required": true,
+                "description": "List the certifications you have obtained.",
+                "accessor_key": "certifications_obtained"
+            },
+            {
+                "type": "text",
+                "label": "Name of Certification Issuing Authority",
+                "required": true,
+                "description": "Enter the name of the authority that issued the certification.",
+                "accessor_key": "certification_issuing_authority"
+            },
+            {
+                "type": "date",
+                "label": "Certification Completion Date",
+                "required": true,
+                "description": "Select the date when the certification was issued.",
+                "accessor_key": "certification_completion_date"
+            },
+            {
+                "type": "file",
+                "label": "Upload Proof of Certification",
+                "required": true,
+                "description": "Upload the proof of your certification.",
+                "accessor_key": "certification_proof"
+            },
+            {
+                "type": "date",
+                "label": "Please Enter a Tentative Date you are expected to join us in case you are shortlisted/selected",
+                "required": true,
+                "accessor_key": "tentative_joining_date"
+            },
+            {
+                "type": "radio",
+                "label": "Are you a Fresher?",
+                "required": true,
+                "options": ["YES", "NO"],
+                "accessor_key": "are_you_a_fresher"
+            }
+        ]
+    },
+    {
+        "page": 6,
+        "questions": [
+            {
+                "type": "text",
+                "label": "Total Experience",
+                "required": true,
+                "description": "Enter your total years & months of experience.",
+                "accessor_key": "total_experience"
+            },
+            {
+                "type": "text",
+                "label": "Organization Name",
+                "required": true,
+                "description": "Enter the name of the current organization you have worked for.",
+                "accessor_key": "organization_name"
+            },
+            {
+                "type": "text",
+                "label": "Designation/Job Title",
+                "required": true,
+                "description": "Enter your current designation or job title.",
+                "accessor_key": "designation"
+            },
+            {
+                "type": "date",
+                "label": "Employment Start Date",
+                "required": true,
+                "description": "Select the start date of your employment.",
+                "accessor_key": "employment_start_date"
+            },
+            {
+                "type": "date",
+                "label": "Employment End Date",
+                "required": false,
+                "description": "Select the end date of your employment (if applicable).",
+                "accessor_key": "employment_end_date"
+            },
+            {
+                "type": "textarea",
+                "label": "List down your Roles and Responsibilities",
+                "required": true,
+                "description": "Describe your roles and responsibilities in the organization.",
+                "accessor_key": "roles_and_responsibilities"
+            },
+            {
+                "type": "text",
+                "label": "Reason for Leaving",
+                "required": true,
+                "description": "Provide the reason for leaving your previous or current job.",
+                "accessor_key": "reason_for_leaving"
+            },
+            {
+                "type": "text",
+                "label": "Current CTC",
+                "required": true,
+                "description": "Enter your current Cost to Company (CTC). Format : INR 100000 (Annual CTC).",
+                "accessor_key": "current_ctc"
+            },
+            {
+                "type": "text",
+                "label": "Expected CTC",
+                "required": true,
+                "description": "Enter your expected Cost to Company (CTC). Format : INR 100000 (Annual CTC).",
+                "accessor_key": "expected_ctc"
+            },
+            {
+                "type": "text",
+                "label": "Notice Period",
+                "required": true,
+                "description": "Enter the number of days in your notice period. Example : 60 Days.",
+                "accessor_key": "notice_period"
+            }
+        ]
+    },
+    {
+        "page": 7,
+        "questions": [
+            {
+                "type": "file",
+                "label": "Please upload your Salary Slips/Payslips (Last 3 Months) for your total experience",
+                "required": true,
+                "description": "Upload your Salary Slips or Payslips for the last 3 months.",
+                "accessor_key": "salary_slips"
+            },
+            {
+                "type": "file",
+                "label": "Please upload your Bank Statements (Last 3 Months) for your total experience",
+                "required": true,
+                "description": "Upload your Bank Statements for the last 3 months.",
+                "accessor_key": "bank_statements"
+            },
+            {
+                "type": "file",
+                "label": "Upload Offer Letter/Joining Letter/Employment Agreement from organization(s) for your total experience",
+                "required": true,
+                "description": "Upload your Offer Letter, Joining Letter, or Employment Agreement from your current or previous organization(s).",
+                "accessor_key": "offer_letter"
+            },
+            {
+                "type": "file",
+                "label": "Upload increment letter from from organization(s) for your total experience",
+                "required": true,
+                "description": "Upload any Increment Letters from your current or previous organization(s).",
+                "accessor_key": "increment_letter"
+            },
+            {
+                "type": "file",
+                "label": "Upload Relieving Letter/Experience Certificates / Acceptance of resignation from present employment",
+                "required": true,
+                "description": "Upload your Relieving Letter, Experience Certificates, or Acceptance of Resignation from your current employment.",
+                "accessor_key": "relieving_letter"
+            }
+        ]
+    },
+    {
+        "page": 8,
+        "questions": [
+            {
+                "type": "radio",
+                "label": "Are you Currently Serving your Notice Period?",
+                "required": true,
+                "options": ["YES", "NO"],
+                "description": "Select 'Yes' if you are currently serving your notice period, otherwise select 'No'.",
+                "accessor_key": "serving_notice_period"
+            },
+            {
+                "type": "date",
+                "label": "Mention your Last working Date",
+                "required": false,
+                "description": "If you selected 'Yes' above, enter your last working date in the organization.",
+                "accessor_key": "last_working_date"
+            },
+            {
+                "type": "radio",
+                "label": "Do you hold any existing offers that we should be aware of?",
+                "required": true,
+                "options": ["YES", "NO", "MAYBE"],
+                "description": "Select 'Yes', 'No', or 'Maybe' if you hold any existing offers.",
+                "accessor_key": "existing_offers"
+            },
+            {
+                "type": "text",
+                "label": "If yes, enter the name of the organization you hold an offer from",
+                "required": false,
+                "description": "If you selected 'Yes' above, enter the name of the organization you hold an offer from.",
+                "accessor_key": "offer_organization_name"
+            },
+            {
+                "type": "file",
+                "label": "Please upload the offer letter or proof of offer you hold",
+                "required": false,
+                "description": "Upload the offer letter or proof of offer you hold from the organization.",
+                "accessor_key": "offer_proof"
+            },
+            {
+                "type": "radio",
+                "label": "Please confirm if you have accepted the offer you hold?",
+                "required": false,
+                "options": ["YES", "NO", "MAYBE"],
+                "description": "Select 'Yes', 'No', or 'Maybe' to confirm if you have accepted the offer you hold.",
+                "accessor_key": "offer_accepted"
+            },
+            {
+                "type": "date",
+                "label": "Please mention the date you have to accept the Offer you hold or the date you have Accepted the Offer",
+                "required": false,
+                "description": "Enter the date you have to accept the offer or the date you have accepted the offer.",
+                "accessor_key": "offer_acceptance_date"
+            },
+            {
+                "type": "text",
+                "label": "If no, mention the expected/proposed CTC you are offered",
+                "required": false,
+                "description": "If you selected 'No' above, mention the expected or proposed Cost to Company (CTC) offered.",
+                "accessor_key": "proposed_ctc"
+            }
+        ]
+    },
+    {
+        "page": 9,
+        "questions": [
+            {
+                "type": "text",
+                "label": "Please mention One reference contact person name from this organization",
+                "required": true,
+                "description": "Enter the name of one reference contact person from this organization.",
+                "accessor_key": "reference_contact_name"
+            },
+            {
+                "type": "text",
+                "label": "One reference contact person's Designation from this organization",
+                "required": true,
+                "description": "Enter the designation of the reference contact person from this organization.",
+                "accessor_key": "reference_contact_designation"
+            },
+            {
+                "type": "tel",
+                "label": "One reference contact person's Contact No from this organization",
+                "required": true,
+                "description": "Enter the contact number of the reference contact person from this organization. Format: +(Country Code) [Number]",
+                "accessor_key": "reference_contact_number"
+            },
+            {
+                "type": "email",
+                "label": "One reference contact person's Email ID from this organization",
+                "required": true,
+                "description": "Enter the email address of the reference contact person from this organization. Format: example@example.com",
+                "accessor_key": "reference_contact_email"
+            },
+            {
+                "type": "text",
+                "label": "One reference contact person's - Please state the Professional Relationship with the mentioned reference contact person's",
+                "required": true,
+                "description": "State your professional relationship with the mentioned reference contact person.",
+                "accessor_key": "reference_contact_relationship"
+            },
+            {
+                "type": "date",
+                "label": "Please mention the date we can Reference Check",
+                "required": true,
+                "description": "Enter the date when we can conduct a reference check.",
+                "accessor_key": "reference_check_date"
+            }
+        ]
+    },
+    {
+        "page": 10,
+        "questions": [
+            {
+                "type": "radio",
+                "label": "Employment Verification Consent",
+                "required": true,
+                "description": "Select 'YES' if you consent to employment verification, otherwise select 'NO' or 'MAYBE'.",
+                "options": ["YES", "NO", "MAYBE"],
+                "accessor_key": "employment_verification_consent"
+            },
+            {
+                "type": "radio",
+                "label": "Authorization to contact previous employers and references",
+                "required": true,
+                "description": "Select 'YES' if you authorize us to contact previous employers and references, otherwise select 'NO' or 'MAYBE'.",
+                "options": ["YES", "NO", "MAYBE"],
+                "accessor_key": "contact_previous_employers_consent"
+            }
+        ]
+    },
+    {
+        "page": 11,
+        "questions": [
+            {
+                "type": "radio",
+                "label": "Consent to conduct background checks",
+                "required": true,
+                "description": "Select 'YES' if you consent to background checks, otherwise select 'NO' or 'MAYBE'.",
+                "options": ["YES", "NO", "MAYBE"],
+                "accessor_key": "background_checks_consent"
+            },
+            {
+                "type": "radio",
+                "label": "Consent to Drug/Alcohol Testing",
+                "required": true,
+                "description": "Select 'YES' if you consent to drug/alcohol testing, otherwise select 'NO' or 'MAYBE'.",
+                "options": ["YES", "NO", "MAYBE"],
+                "accessor_key": "drug_alcohol_testing_consent"
+            },
+            {
+                "type": "radio",
+                "label": "Disclosure of any Criminal Convictions or Pending Criminal Cases",
+                "required": true,
+                "description": "Select 'YES' if you have any criminal convictions or pending criminal cases, otherwise select 'NO'.",
+                "options": ["YES", "NO"],
+                "accessor_key": "criminal_convictions_disclosure"
+            },
+            {
+                "type": "textarea",
+                "label": "Details of any Criminal Convictions or Pending Criminal Cases",
+                "required": false,
+                "description": "If you selected 'YES' above, please provide details of your criminal convictions or pending criminal cases, including charges, dates, and outcomes.",
+                "accessor_key": "criminal_convictions_details"
+            },
+            {
+                "type": "radio",
+                "label": "By submitting this form, I acknowledge that all the information provided is true and accurate to the best of my knowledge.",
+                "required": true,
+                "description": "Select 'YES' if you acknowledge that all information provided is true and accurate, otherwise select 'NO'.",
+                "options": ["YES", "NO"],
+                "accessor_key": "information_accuracy_acknowledgment"
+            }
+        ]
+    }
+]

@@ -1,0 +1,76 @@
+.q-container {
+    background-color: #e7f6f9;
+    padding-top: 10px;
+
+    >form {
+        width: 40vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+        >.q-card {
+            background-color: #ffffff;
+            width: 100%;
+            min-height: 3rem;
+            padding: 30px;
+            border-radius: 18px;
+            border: 0.5px solid #feffff;
+        }
+
+
+    }
+}
+
+.q-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgb(32, 33, 36);
+    ;
+
+    >div>label {
+        font-weight: 400;
+        color: rgb(32, 33, 36);
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    >div>span {
+        margin-left: 5px;
+        color: red;
+    }
+
+    >p {
+        font-weight: 400;
+        color: rgb(32, 33, 36);
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    >input {
+        width: 50%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(32, 33, 36);
+        ;
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin-top: 10px;
+
+    >.choice-label {
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 22px;
+
+    }
+}

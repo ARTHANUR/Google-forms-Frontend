@@ -1,0 +1,67 @@
+.header-container {
+    width: 45%;
+    margin: 0 auto;
+
+    >img {
+        width: 100%;
+        border-radius: 18px;
+
+    }
+
+    >.header-card {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 18px;
+        border-top: 10px solid #84d3e0;
+
+        >h1 {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            color: rgb(32, 33, 36);
+        }
+        >div{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            >p{
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: 
+                rgb(95, 99, 104);
+                >em{
+                    color: 
+                    rgb(26, 115, 232);
+                    font-weight: 400;
+                    font-style: none;
+                }
+            }
+        }
+
+        >p{
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: 
+            rgb(95, 99, 104);
+        }
+        >span{
+            color: 
+            rgb(217, 48, 37);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+}
+
+.header {
+    width: 100vw;
+    background-color: #e7f6f9;
+    padding-left: 20px;
+
+}
