@@ -45,7 +45,7 @@ const Response = () => {
                                             item.inputs.map((data)=>{
                                                 return(<>
                                                     <div className="response-card">
-                                                        <p>{data.inputKey}</p>
+                                                        <p>{data.inputKey.replace("_"," ")}</p>
                                                         <p>:</p>
                                                         <p>{data.inputValue}</p>
                                                     </div>
