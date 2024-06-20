@@ -6,7 +6,7 @@ const Response = () => {
     const [resData, setResData] = useState(null);
     const GetData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/response");
+            const response = await fetch("https://google-forms-backend-80i9.onrender.com");
             const data = await response.json();
             console.log(data);
             setResData(data);
