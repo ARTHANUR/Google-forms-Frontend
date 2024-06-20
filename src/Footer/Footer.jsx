@@ -73,7 +73,7 @@ const Footer = () => {
         }
 
         try {
-            const response = await fetch("https://google-forms-backend-80i9.onrender.com", {
+            const response = await fetch("https://google-forms-backend-80i9.onrender.com/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
