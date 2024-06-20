@@ -5,5 +5,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #e7f6f9;
+    width: 100vw;
+    overflow-x:hidden;
 
 }

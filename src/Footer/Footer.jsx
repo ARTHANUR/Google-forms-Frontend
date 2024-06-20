@@ -2,9 +2,13 @@ import React, { useContext } from "react";
 import "./Footer.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 import MyContext from "../MyContext";
+import { useNavigate } from "react-router-dom";
+
+
 
 const Footer = () => {
     const { count, setCount } = useContext(MyContext);
+    const navigate = useNavigate();
 
     const handleNext = () => {
         if (count < 11) {
@@ -64,6 +68,8 @@ const Footer = () => {
                     inputs: JSON.parse(pageData),
                 });
             }
+            navigate("/response")
+           
         }
 
         try {

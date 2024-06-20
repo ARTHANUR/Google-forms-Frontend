@@ -49,7 +49,7 @@ const Form = () => {
                                 </div>
                             ))
                         ) : (
-                            <input id={item.accessor_key} type={item.type} required={item.required} placeholder="Your answer"  />
+                            <input id={item.accessor_key} type={item.type} required={item.required} className={item.type == "file" ? "file-style" : ""} placeholder="Your answer"  />
                         )}
                     </div>
                 ))}
