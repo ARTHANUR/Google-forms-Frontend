@@ -17,18 +17,15 @@ const Response = () => {
     return (
         <div className="response">
             <div className="response-container">
-                <img src="https://res.cloudinary.com/dboa7dqkl/image/upload/v1718640956/samples/forms_bg_img_gpvdhp.jpg" alt="" />
                 <div>
-                    <h1>Candidate Application Form - VYZEN</h1>
+                    <h1> Application Form </h1>
                     <p>Your response has been recorded</p>
                 </div>
                 <span>
                     <p>
-                        This form was created inside of VYZEN. <em>Report Abuse</em>
+                        This form was created for Shashank <em>Report Abuse</em>
                     </p>
-                    <h2>
-                        Google <em>Forms</em>
-                    </h2>
+                    
                 </span>
             </div>
 

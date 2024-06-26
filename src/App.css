@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
+    background-image: url('https://res.cloudinary.com/dboa7dqkl/image/upload/v1719373423/flat_seamless_arabic_geometric_ornament_outline_pattern_fvzlvg.jpg');
+    background-repeat: repeat;
+    background-size: contain;
     font-family: "Roboto", sans-serif;
+    /* background-color: #c6c6c6; */
     padding: 0;
     margin: 0;
-    background-color: #e7f6f9;
+    /* background-color: #e7f6f9; */
     width: 100vw;
     overflow-x:hidden;
 

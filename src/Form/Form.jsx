@@ -38,7 +38,7 @@ const Form = () => {
                             <label htmlFor={item.accessor_key}>{item.label}</label>
                             {item.required && <span>*</span>}
                         </div>
-                        {item.description && <p>Description: {item.description}</p>}
+                        {item.description && <p>{item.description}</p>}
                         {item.options ? (
                             item.options.map((choice, idx) => (
                                 <div className="choice" key={idx}>

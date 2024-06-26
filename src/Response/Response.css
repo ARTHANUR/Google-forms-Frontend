@@ -12,11 +12,13 @@
         }
 
         >div {
-            background-color: #ffffff;
+            background-color: #ffffff7b;
+            backdrop-filter: blur(4px);
+            border: 2px solid rgba(0, 0, 0, 0.492);
             padding: 20px;
             margin-top: 10px;
             border-radius: 18px;
-            border-top: 10px solid #84d3e0;
+            border-top: 10px solid rgba(0, 128, 0, 0.523);
 
             >h1 {
                 font-weight: 400;
@@ -83,7 +85,7 @@
     cursor: pointer;
     width: 10rem;
     height: 2rem;
-    background-color: #84d3e0;
+    background-color: rgba(0, 128, 0, 0.804);
     border: none;
     outline: none;
     border-radius: 20px;

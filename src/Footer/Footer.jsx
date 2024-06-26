@@ -4,8 +4,6 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import MyContext from "../MyContext";
 import { useNavigate } from "react-router-dom";
 
-
-
 const Footer = () => {
     const { count, setCount } = useContext(MyContext);
     const navigate = useNavigate();
@@ -31,7 +29,7 @@ const Footer = () => {
                 inputKey: item.id,
                 inputValue: item.value,
             });
-            item.value = ''
+            item.value = "";
         });
         const stringifiedJson = JSON.stringify(inputJsonList);
         localStorage.setItem(`page${count}`, stringifiedJson);
@@ -40,12 +38,12 @@ const Footer = () => {
 
     const handleNextClick = () => {
         const form = document.querySelector("form");
-    
+
         if (form.checkValidity()) {
             setLocalJsonData();
             handleNext();
         } else {
-            form.reportValidity(); 
+            form.reportValidity();
         }
     };
 
@@ -68,8 +66,7 @@ const Footer = () => {
                     inputs: JSON.parse(pageData),
                 });
             }
-            navigate("/response")
-           
+            navigate("/response");
         }
 
         try {
@@ -112,18 +109,13 @@ const Footer = () => {
                             </>
                         )}
                     </span>
+                    <div>
+                        <ProgressBar completed={(count / 11) * 100} bgColor="green" width="10rem" height="10px" isLabelVisible={false} />
+                        <p>Page {count} out of 11</p>
+                    </div>
 
-                    <ProgressBar completed={(count / 11) * 100} bgColor="#89b4f8" width="10rem" height="10px" isLabelVisible={false} />
-                    <p>Page {count} out of 11</p>
                     <p onClick={clearForm}>Clear form</p>
                 </div>
-                <p>Never submit passwords through Google Forms.</p>
-                <p>
-                    This form was created inside of VYZEN. <em>Report Abuse</em>
-                </p>
-                <h1>
-                    Google <em>Forms</em>
-                </h1>
             </div>
         </div>
     );
